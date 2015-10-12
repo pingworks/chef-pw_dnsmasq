@@ -12,7 +12,7 @@ package 'dnsmasq'
 
 service 'dnsmasq' do
   supports :status => true
-  action [ :enable, :start ]
+  action [ :enable ]
 end
 
 template '/etc/dnsmasq.d/pingworks' do
