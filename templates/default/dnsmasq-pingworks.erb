@@ -11,5 +11,6 @@ address=/compute2.ws.pingworks.net/10.33.0.12
 #address=/archive.ubuntu.com/<%= node['pw_dnsmasq']['ubuntu_mirror_ip'] %>
 <% if node['pw_dnsmasq']['rubygems_mirror_ip'] != '' then %>
 #address=/rubygems.org/<%= node['pw_dnsmasq']['rubygems_mirror_ip'] %>
+#address=/api.rubygems.org/<%= node['pw_dnsmasq']['rubygems_mirror_ip'] %>
 #address=/bundler.rubygems.org/<%= node['pw_dnsmasq']['rubygems_mirror_ip'] %>
 <% end %>
